@@ -1,5 +1,7 @@
 const axios = require('axios');
 
+
+// check discord Invite
 async function isInvite(invite) {
 	if (invite.length <= 0 || !invite || typeof invite !== 'string') {
 		return false;
@@ -12,6 +14,7 @@ async function isInvite(invite) {
 	return false;
 }
 
+// get discord invite link
 async function invitelink(serverId) {
 	return await axios
 		.get('https://discord.com/api/guilds/' + serverId + '/widget.json')

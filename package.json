@@ -1,0 +1,23 @@
+{
+  "name": "discordinvite",
+  "version": "1.0.0",
+  "description": "Discord Invite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/besoeasy/discordinvite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/besoeasy/discordinvite/issues"
+  },
+  "homepage": "https://github.com/besoeasy/discordinvite#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}

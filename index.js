@@ -33,4 +33,4 @@ async function invitelink(serverId) {
 		});
 }
 
-
+module.exports = { isInvite, invitelink };

@@ -1,3 +1,9 @@
+## Setup
+
+![Setup](https://bafybeigwyzhltpwijs2zxv4ugsbkxi57hq5vqzibcj5pvwacuqf35idwoy.ipfs.infura-ipfs.io/)
+
+
+## Example :
 ```javascript
 import { isInvite, invite } from 'discordinvite';
 

@@ -15,7 +15,7 @@ async function isInvite(invite) {
 }
 
 // get discord invite link
-async function invitelink(serverId) {
+async function invite(serverId) {
 	return await axios
 		.get('https://discord.com/api/guilds/' + serverId + '/widget.json')
 		.then(function (response) {
@@ -24,6 +24,7 @@ async function invitelink(serverId) {
 				id: response.data.id,
 				invite: response.data.instant_invite,
 				members: response.data.members,
+				onlinecount: response.data.members.length,
 			};
 		})
 		.catch(function (error) {
@@ -32,8 +33,9 @@ async function invitelink(serverId) {
 				id: null,
 				invite: null,
 				members: null,
+				onlinecount: null,
 			};
 		});
 }
 
-module.exports = { isInvite, invitelink };
+module.exports = { isInvite, invite  };

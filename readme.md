@@ -5,15 +5,15 @@
 
 ## Example :
 ```javascript
-import { isInvite, invite } from 'discordinvite';
+import { discordIsInvite, discordInvite } from 'discordinvite';
 
-const invite = await invite(ServerId);
+const invite = await discordInvite(ServerId);
 
 // invite url
 const invite = invite.invite;
 
 //check is invite valid
-const valid = isInvite(invite.invite);
+const valid = discordIsInvite(invite.invite);
 
 // online memebers
 const invite = invite.members;

@@ -1,5 +1,15 @@
 const axios = require('axios');
 
+//check discord server
+async function discordServer(serverId) {
+	try {
+		let server = await axios.get(`https://discordapp.com/api/guilds/${serverId}`);
+		return server.data.name;
+	} catch (err) {
+		console.log(err);
+		return false;
+	}
+}
 
 // check discord Invite
 async function discordIsInvite(invite) {
@@ -38,4 +48,4 @@ async function discordInvite(serverId) {
 		});
 }
 
-module.exports = { discordIsInvite, discordInvite  };
+module.exports = { discordIsInvite, discordServer, discordInvite };

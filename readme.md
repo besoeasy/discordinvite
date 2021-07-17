@@ -2,10 +2,10 @@
 
 ![Setup](https://bafybeiei5ozs7nayuqlrvpzhewntbees42qzv2wc6yrz4hnwnj36jb74o4.ipfs.infura-ipfs.io/)
 
-
 ## Example :
+
 ```javascript
-import { discordIsInvite, discordInvite } from 'discordinvite';
+import { discordIsInvite, discordServer, discordInvite } from 'discordinvite';
 
 const invite = await discordInvite(ServerId);
 
@@ -20,4 +20,6 @@ const invite = invite.members;
 
 // online memebers count
 const invite = invite.onlinecount;
+
+const serverIdvalid = await discordServer(ServerId);
 ```
